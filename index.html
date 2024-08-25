@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Teacher Booking Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#admin">Admin</a></li>
+                <li><a href="#teacher">Teacher</a></li>
+                <li><a href="#student">Student</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="admin">
+            <h1>Admin</h1>
+            <form id="add-teacher-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department"><br><br>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject"><br><br>
+                <button type="submit">Add Teacher</button>
+            </form>
+            <ul id="teacher-list"></ul>
+        </section>
+        <section id="teacher">
+            <h1>Teacher</h1>
+            <form id="login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <button type="submit">Login</button>
+            </form>
+            <div id="teacher-dashboard">
+                <h2>Schedule Appointment</h2>
+                <form id="schedule-appointment-form">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date"><br><br>
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time"><br><br>
+                    <label for="student">Student:</label>
+                    <select id="student" name="student"></select><br><br>
+                    <button type="submit">Schedule Appointment</button>
+                </form>
+                <h2>View Appointments</h2>
+                <ul id="appointment-list"></ul>
+                <h2>View Messages</h2>
+                <ul id="message-list"></ul>
+            </div>
+        </section>
+        <section id="student">
+            <h1>Student</h1>
+            <form id="register-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <button type="submit">Register</button>
+            </form>
+            <form id="login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <button type="submit">Login</button>
+            </form>
+            <div id="student-dashboard">
+                <h2>Search Teacher</h2>
+                <form id="search-teacher-form">
+                    <label for="teacher-name">Teacher Name:</label>
+                    <input type="text" id="teacher-name" name="teacher-name"><br><br>
+                    <button type="submit">Search</button>
+                </form>
+                <h2>Book Appointment</h2>
+                <form id="book-appointment-form">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date"><br><br>
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time"><br><br>
+                    <label for="teacher">Teacher:</label>
+                    <select id="teacher" name="teacher"></select><br><br>
+                    <button type="submit">Book Appointment</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <
